@@ -1,0 +1,74 @@
+<!doctype html>
+<html class="login-content" data-ng-app="materialAdmin">
+ <head>
+  <meta charset="UTF-8"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>找回密码</title>
+ 
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <!-- Vendor CSS -->
+  <link href="。。/css/material-design-iconic-font/css/material-design-iconic-font.min.css" rel="stylesheet" type="text/css">
+  <!-- CSS -->
+  <link href="../css/app.min.1.css" rel="stylesheet" type="text/css">
+ </head>
+ <body class="login-content" data-ng-controller="loginCtrl as lctrl">
+
+    <div class="lc-block" id="l-login" data-ng-class="{'toggled':lctrl.login === 1}">
+    	<h1 class="lean">10101001</h1>
+    	<p class="text-left" style="font-fanily:微软雅黑; font-size:20px;">主人加密了呢    (￢_￢)</p>
+    	<form action="sendEmail" method="post">
+    	<div class="input-group m-b-20">
+	      <span class="input-group-addon"><i class="zmdi zmdi-email"></i></span>
+	      <div class="fg-line">
+	        <input type="text" name="email" class="form-control" placeholder="请输入主人加密时的秘钥" regex="^\w+@\w+\.[a-zA-Z]+(\.[a-zA-Z]+)?$"/>
+	      </div>
+	    </div>
+	
+	    <input type="submit" class="btn btn-login btn-danger btn-float" value="解" style="font-size:25px; ">
+		</form>
+	    <ul class="login-navigation">
+	      <li data-block="#l-login" class="bgm-green" data-ng-click="lctrl.forgot = 0; lctrl.login = 1">Login</li>
+	      
+	    </ul>
+    </div>
+    
+    
+
+   
+ </body>
+ 	
+ 	<script src="。。/js/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="../js/log.js"></script>
+	<!-- Angular -->
+	<script src="../js/bower_components/angular/angular.min.js"></script>
+	<script src="../js/bower_components/angular-resource/angular-resource.min.js"></script>
+	<script src="../js/bower_components/angular-animate/angular-animate.min.js"></script>
+	
+	
+	<!-- Angular Modules -->
+	<script src="../js/bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script src="../js/bower_components/angular-loading-bar/src/loading-bar.js"></script>
+	<script src="../js/bower_components/oclazyload/dist/ocLazyLoad.min.js"></script>
+	<script src="../js/bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+	
+	<!-- Common js -->
+	<script src="../js/bower_components/angular-nouislider/src/nouislider.min.js"></script>
+	<script src="../js/bower_components/ng-table/dist/ng-table.min.js"></script>
+	
+	<!-- Placeholder for IE9 -->
+	<!--[if IE 9 ]>
+	    <script src="js/bower_components/jquery-placeholder/jquery.placeholder.min.js"></script>
+	<![endif]-->
+	<!-- App level -->
+	<script src="../js/app.js"></script>
+	<script src="../js/controllers/main.js"></script>
+	<script src="../js/controllers/ui-bootstrap.js"></script>
+	
+	
+	<!-- Template Modules -->
+	<script src="../js/modules/form.js"></script>
+</html>
